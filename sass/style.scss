@@ -98,6 +98,23 @@ $form-group-margin-bottom: 30px !default;
   opacity: 0.25 !important;
 }
 
+#cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #ccc; /* Light grey outline */
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out;
+  transform-origin: center;
+  z-index: 9999;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+
 // Template Base
 body {
   font-family: $font-primary;

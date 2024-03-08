@@ -153,6 +153,32 @@
     });
   };
 
+  var hoverCircleInit = function () {
+    const cursor = document.getElementById('cursor');
+
+    document.addEventListener('mousemove', function (e) {
+      const x = e.clientX - 10;
+      const y = e.clientY - 10;
+
+      cursor.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    const hoverableElements = document.querySelectorAll('.hoverable');
+
+    hoverableElements.forEach(function (element) {
+      element.addEventListener('mouseenter', function () {
+        cursor.style.width = '40px';
+        cursor.style.height = '40px';
+        cursor.style.opacity = 0.5;
+      });
+
+      element.addEventListener('mouseleave', function () {
+        cursor.style.width = '20px';
+        cursor.style.height = '20px';
+        cursor.style.opacity = 1;
+      });
+    });
+  };
   // Document on load.
   $(function () {
     fullHeight();
@@ -160,5 +186,6 @@
     counterWayPoint();
     contentWayPoint();
     owlCarouselFeatureSlide();
+    hoverCircleInit();
   });
 })();
