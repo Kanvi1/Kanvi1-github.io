@@ -1,14 +1,14 @@
 ## Notes
 
 - Skills
-  `. Infinite scroller
+  [x] Infinite scroller
 
 - Projects
 
-  1. Makershala
-  2. Bug Tracking application
+  1. Makershala --
+  2. Bug Tracking application -- Bugs Eye
   3. Keywa
-  4. Project accelerator (name it) [Figma community cover] [Perosnal Favourite tag]
+  4. Project accelerator -- Epic Ease [Perosnal Favourite tag]
   5. DV Projects with Gif
   6. DBMSI Project
 
