@@ -83,6 +83,12 @@ $form-group-margin-bottom: 30px !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
+// Define a mixin for the grayscale effect
+@mixin grayscaleEffect {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease; // Smooth transition on hover
+}
+
 // Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
@@ -904,6 +910,36 @@ header {
           width: 1em;
           margin-left: -1em;
         }
+      }
+    }
+  }
+}
+
+// Skills slider
+#skills-slider {
+  margin: 5em 0;
+
+  .owl-carouselSkills {
+    // height: 6em;
+
+    .item {
+      height: 100%;
+      font-size: 50px;
+      text-align: center;
+      // @include grayscaleEffect; // Apply the grayscale effect
+      opacity: 0.5;
+      transition: all 0.2s ease;
+
+      // Add hover effect to revert to color on hover
+      &:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+
+      img.img-tech-icon {
+        max-height: 2em;
+        width: auto;
+        margin: 0 auto;
       }
     }
   }

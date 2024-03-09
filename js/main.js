@@ -118,6 +118,35 @@
         "<i class='icon-arrow-right3 owl-direction'></i>",
       ],
     });
+    var owlSkills = $('.owl-carouselSkills');
+    owlSkills.owlCarousel({
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      autoplay: true,
+      loop: true,
+      margin: 0,
+      // nav: true,
+      dots: false,
+      autoHeight: true,
+      responsive: {
+        0: {
+          items: 3,
+        },
+        600: {
+          items: 4,
+        },
+        1000: {
+          items: 6,
+        },
+        1500: {
+          items: 10,
+        },
+      },
+      // navText: [
+      //   "<i class='icon-arrow-left3 owl-direction'></i>",
+      //   "<i class='icon-arrow-right3 owl-direction'></i>",
+      // ],
+    });
     var owl2 = $('.owl-carousel');
     owl2.owlCarousel({
       animateOut: 'fadeOut',
