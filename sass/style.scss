@@ -494,6 +494,7 @@ header {
 
 // #colorlib-instagram,
 #colorlib-services,
+#colorlib-experience,
 #colorlib-contact,
 #colorlib-work,
 #colorlib-blog,
@@ -848,6 +849,61 @@ header {
         display: inline-block;
         width: 1em;
         margin-left: -1em;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------
+
+// EXPERIENCE
+#colorlib-experience {
+  .services-flex {
+    @include flex();
+    @include flexwrap();
+    width: 100%;
+    .one-third {
+      width: 55%;
+      padding: 3em 2em 3em 0;
+    }
+    .one-forth {
+      width: 45%;
+      .one-third,
+      .one-forth {
+        display: inline-block;
+        @media screen and (max-width: $screen-sm) {
+          height: 400px;
+        }
+      }
+    }
+    .one-third,
+    .one-forth {
+      display: inline-block;
+      @media screen and (max-width: $screen-sm) {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .services {
+    margin-bottom: 4em;
+    h3 {
+      font-family: $font-primary;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    ul {
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+        &::before {
+          content: '\2022';
+          color: $brand-black;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
       }
     }
   }
