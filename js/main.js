@@ -101,7 +101,7 @@
       margin: 0,
       nav: true,
       dots: false,
-      autoHeight: true,
+      // autoHeight: true,
       responsive: {
         0: {
           items: 1,
