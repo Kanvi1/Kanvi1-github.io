@@ -51,15 +51,15 @@
 - Certified Scrum Master -
 - LC 1k Rank Contest -
 - 100 days badge -
-- Personal Website Went Live
-- 4.0 GPA
-- Outstanding Performance Award
-- Applause Award 1
-- Applause Award 2
-- TEDx Event Core lead
-- GDSC
-- Interviewed People
-- Mages Presentation
-- First Freelance Client
+- Personal Website Went Live -
+- 4.0 GPA -
+- Outstanding Performance Award -
+- Applause Award 1 -
+- Applause Award 2 -
+- TEDx Event Core lead -
+- GDSC -
+- Interviewed People -
+- Mages Presentation -
+- First Freelance Client -
 - Hactober fest participation
--
+- Visualive
