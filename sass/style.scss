@@ -167,7 +167,7 @@ ol {
   display: block;
   margin-bottom: 1.5em;
 }
-span {
+span:not(.col-primary) {
   font-size: 18px;
   color: rgba($brand-lighter, 0.8);
 }
@@ -979,7 +979,7 @@ header {
     }
   }
   .desc {
-    .read {
+    .read:not(.icons) {
       text-align: right;
       a {
         color: $brand-black;
@@ -990,6 +990,33 @@ header {
         &:after {
           position: absolute;
           top: 7px;
+          left: -60px;
+          right: 0;
+          content: '';
+          width: 40px;
+          height: 1px;
+          background: $brand-black;
+        }
+      }
+    }
+    .read.icons {
+      text-align: right;
+      a {
+        color: $brand-lighter;
+        text-decoration: none;
+        // text-transform: uppercase;
+        letter-spacing: 4px;
+        padding-left: 10px;
+        font-size: 32px;
+        position: relative;
+        transition: all 0.2s;
+        &:hover {
+          color: $brand-primary;
+        }
+
+        &:first-child:after {
+          position: absolute;
+          top: 16px;
           left: -60px;
           right: 0;
           content: '';
