@@ -179,6 +179,101 @@
       });
     });
   };
+
+  // var contactFormSubmit = function () {
+  //   $('#contact-form').submit(function (event) {
+  //     event.preventDefault();
+  //     var formData = $(this).serialize();
+  //     $.ajax({
+  //       type: 'POST',
+  //       url: 'https://formspree.io/f/mjvnowae',
+  //       data: formData,
+  //       headers: {
+  //         Accept: 'application/json',
+  //       },
+  //       success: function (response) {
+  //         // Handle success
+  //         alert('Success!');
+  //         $('#thankYouMessage').text('Thank you for your submission!');
+  //         // Optionally, you can clear the form fields or perform any other action.
+  //       },
+  //       error: function (xhr, status, error) {
+  //         alert('Error!');
+  //         // Handle error
+  //         console.error('Form submission failed:', error);
+  //       },
+  //     });
+  //   });
+  // };
+
+  // FORM SPREE
+  var cfs2 = function () {
+    var form = document.getElementById('contact-form');
+    var showError = function (msg) {
+      if (msg == 'should be an email') {
+        msg = 'Invalid Email address.';
+      }
+      $('#form-submit-h2').text('Oops!');
+      $('#form-submit-p').html(
+        `There was a problem submitting your form. Please retry </br> ${msg}`
+      );
+      $('#form-div').css('opacity', '0');
+      $('#form-thankyou').css('opacity', '1');
+      setTimeout(() => {
+        $('#form-div').css('opacity', '1');
+        $('#form-thankyou').css('opacity', '0');
+      }, 3000);
+    };
+    var showSuccess = function () {
+      $('#form-submit-h2').text('Thank You!');
+      $('#form-submit-p').text('I will get back to you as soon as I can :)');
+      $('#form-div').css('opacity', '0');
+      $('#form-thankyou').css('opacity', '1');
+      $('#speed-gif').show();
+      setTimeout(() => {
+        $('#form-div').css('opacity', '1');
+        $('#form-thankyou').css('opacity', '0');
+        $('#speed-gif').hide();
+      }, 3000);
+    };
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            // status.innerHTML = 'Thanks for your submission!';
+            showSuccess();
+            form.reset();
+          } else {
+            response.json().then((data) => {
+              if (Object.hasOwn(data, 'errors')) {
+                showError(data['errors'].map((error) => error['message']).join(', '));
+                console.log(data['errors'].map((error) => error['message']).join(', '));
+                // status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
+              } else {
+                // status.innerHTML = 'Oops! There was a problem submitting your form';
+                showError();
+                console.log('Issue');
+              }
+            });
+          }
+        })
+        .catch((error) => {
+          showError();
+          // status.innerHTML = 'Oops! There was a problem submitting your form';
+          console.log(error);
+        });
+    }
+    form.addEventListener('submit', handleSubmit);
+  };
   // Document on load.
   $(function () {
     fullHeight();
@@ -187,5 +282,7 @@
     contentWayPoint();
     owlCarouselFeatureSlide();
     hoverCircleInit();
+    cfs2();
+    // contactFormSubmit();
   });
 })();

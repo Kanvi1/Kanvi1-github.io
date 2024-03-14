@@ -1673,6 +1673,26 @@ input[type='text'] {
       @include border-radius(30px);
     }
   }
+
+  #form-div {
+    transition: all 0.2s ease-in;
+  }
+  #form-thankyou {
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    h2.bold {
+      position: relative;
+      font-size: 100px;
+      color: $brand-lighter;
+      // color: #f0f0f0;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .animate-box {
