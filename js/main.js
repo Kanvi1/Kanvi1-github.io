@@ -215,7 +215,7 @@
       }
       $('#form-submit-h2').text('Oops!');
       $('#form-submit-p').html(
-        `There was a problem submitting your form. Please retry </br> ${msg}`
+        `There was a problem submitting your form. Please retry. </br> ${msg}`
       );
       $('#form-div').css('opacity', '0');
       $('#form-thankyou').css('opacity', '1');
