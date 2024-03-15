@@ -1452,6 +1452,42 @@ header {
   }
 }
 
+.copyright-notice {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(211, 211, 211, 0.363);
+  cursor: default;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-size: 13px !important;
+  font-weight: 400;
+  // text-transform: uppercase;
+  // letter-spacing: 2px;
+  @include border-radius(1px);
+  @include transition(0.5s);
+  padding: 8px 20px;
+  &.btn-md {
+    padding: 8px 20px !important;
+  }
+  &.btn-lg {
+    padding: 18px 36px !important;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .copy {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .text {
+    margin-bottom: 0;
+  }
+}
+
 .row-padded-bottom {
   margin-bottom: 4em;
 }
