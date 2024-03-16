@@ -913,7 +913,7 @@ header {
 //WORK
 .work-entry {
   display: block;
-  margin-bottom: 5em;
+  // margin-bottom: 5em;
   width: 100%;
   float: left;
   .work-img {
@@ -1192,7 +1192,8 @@ header {
 }
 
 //TESTIMONY
-#colorlib-testimony {
+#colorlib-testimony,
+#colorlib-work {
   .owl-theme .owl-dots .owl-dot.active span,
   .owl-theme .owl-dots .owl-dot:hover span {
     height: 3px;
@@ -1703,6 +1704,10 @@ input[type='text'] {
     font-size: 32px;
     padding-right: 10px;
     color: $brand-primary;
+  }
+  i.custom-leetcode > svg {
+    fill: $brand-primary;
+    overflow: visible;
   }
 }
 

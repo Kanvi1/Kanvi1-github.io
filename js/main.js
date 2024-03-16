@@ -118,6 +118,25 @@
         "<i class='icon-arrow-right3 owl-direction'></i>",
       ],
     });
+
+    var owlproj = $('.owl-carousel-projects');
+    owlproj.owlCarousel({
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      autoplay: true,
+      autoplayTimeout: 3000,
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      autoHeight: true,
+      items: 1,
+      navText: [
+        "<i class='icon-arrow-left3 owl-direction'></i>",
+        "<i class='icon-arrow-right3 owl-direction'></i>",
+      ],
+    });
+
     var owl2 = $('.owl-carousel');
     owl2.owlCarousel({
       animateOut: 'fadeOut',
