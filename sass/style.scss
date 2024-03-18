@@ -110,6 +110,9 @@ $form-group-margin-bottom: 30px !default;
   transition: transform 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out;
   transform-origin: center;
   z-index: -1;
+  @media screen and (max-width: $screen-sm) {
+    opacity: 0 !important;
+  }
 }
 
 .hoverable {

@@ -10,18 +10,13 @@
 
 - Projects
 
-  1. Makershala --
-  2. Bug Tracking application -- Bugs Eye
-  3. Project accelerator -- Epic Ease [Perosnal Favourite tag]
-
-  - MC Project showcase
+  - Pick Pack Go
+  - Giffft
   - Python CLI using github
-  - LEAPS Website
-  - Symposium Website
+  - DBMSI Project
 
   4. Keywa ?
   5. DV Projects with Gif
-  6. DBMSI Project
 
 - Experience
 
@@ -29,7 +24,12 @@
   2. Internship
   3. Mages Internship
 
-- small Acheivements - use blogs section
+- Education
+
+  1. ASU (GPA)
+  2. NCU
+
+- A little more me in me
 
   - Trips?
   - my firsts
@@ -38,32 +38,7 @@
   - Crossing border on foot
   -
 
-- Education
-  1. ASU (GPA)
-  2. NCU
-
 -- Additional
-[ ] Use Blogs page for acehivements page
 [ ] Use contact form from contact page
 [ ] Travel Journal
 [ ] Use Instagram API for grid like media
-
--- Achievements Notes
-
-- Certified Solutions Architect -
-- Certified Solutions Developer -
-- Certified Scrum Master -
-- LC 1k Rank Contest -
-- 100 days badge -
-- Personal Website Went Live -
-- 4.0 GPA -
-- Outstanding Performance Award -
-- Applause Award 1 -
-- Applause Award 2 -
-- TEDx Event Core lead -
-- GDSC -
-- Interviewed People -
-- Mages Presentation -
-- First Freelance Client -
-- Hactober fest participation
-- Visualive
